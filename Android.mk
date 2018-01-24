@@ -266,9 +266,21 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE           := textclassifier.smartselection.bundle1
-LOCAL_REQUIRED_MODULES := textclassifier.smartselection.en.model
-LOCAL_REQUIRED_MODULES += textclassifier.smartselection.es.model
-LOCAL_REQUIRED_MODULES += textclassifier.smartselection.de.model
-LOCAL_REQUIRED_MODULES += textclassifier.smartselection.fr.model
+
+LOCAL_REQUIRED_MODULES := \
+    textclassifier.smartselection.ar.model \
+    textclassifier.smartselection.de.model \
+    textclassifier.smartselection.en.model \
+    textclassifier.smartselection.es.model \
+    textclassifier.smartselection.fr.model \
+    textclassifier.smartselection.it.model \
+    textclassifier.smartselection.nl.model \
+    textclassifier.smartselection.pl.model \
+    textclassifier.smartselection.pt.model \
+    textclassifier.smartselection.ru.model \
+    textclassifier.smartselection.tr.model \
+    textclassifier.smartselection.zh.model \
+    textclassifier.smartselection.zh-Hant.model
+
 LOCAL_CFLAGS := $(MY_LIBTEXTCLASSIFIER_WARNING_CFLAGS)
 include $(BUILD_STATIC_LIBRARY)
